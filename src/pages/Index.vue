@@ -116,7 +116,8 @@ p {
   grid-column-start: 2;
   grid-column-end: 6;
   color: #e0d186;
-  grid-row: 5;
+  grid-row-start: 5;
+  grid-row-end: 7;
   border: 2px solid #e0d186;
   outline: 2px solid #e0d186;
   outline-offset: -3vw;
@@ -128,7 +129,7 @@ p {
   background-size: contain;
   grid-column-start: 2;
   grid-column-end: 6;
-  grid-row: 6;
+  grid-row: 7;
 }
 .skills {
   grid-row-start: 22;
@@ -163,10 +164,10 @@ li {
     grid-row-end: 7;
   }
   h1 {
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
   h2 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   h3 {
     font-size: 2em;
@@ -181,6 +182,19 @@ li {
     grid-column-end: 7;
     height: 15vh;
     grid-row: 7;
+  }
+}
+@media (min-width: 1000px) {
+  .title {
+    outline-offset: -1vw;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 8;
+  }
+  .stuff {
+    grid-row-start: 11;
+    grid-row-end: 22;
   }
 }
 </style>
